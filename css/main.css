@@ -550,6 +550,12 @@ footer .ft-ul li a:hover{
   .form-search button{ 
     margin-right: 100px;
   }
+  .product5 .itm img{
+    max-width: 60px;
+  }
+  .product4 .itm img{
+    max-width: 50px;
+  }
 }
 @media only screen and (min-width: 992px) { /* PC */
   footer h4{
