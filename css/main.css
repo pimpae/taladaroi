@@ -938,9 +938,144 @@ h4.h4po{
 
 
 
+.main-login{
+  background-color: #f2f3f2;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.main-login h3{
+  font-family: Mali-Bold;
+  color: #004f2b; 
+  font-size: 30px;
+}
+.main-login h3 a{  
+  color: #401c0d !important;
+  font-size: 24px; 
+}
+.main-login p{
+  font-family: Mali-Bold;
+  color: #58595b;  
+}
+.main-login input.form-control{ 
+  font-family: Mali-Bold;
+  border: none;
+  border-radius: 16px;
+  height: 50px;
+  padding-left: 25px;
+}
+.main-login textarea.form-control{ 
+  font-family: Mali-Bold;
+  border: none;
+  border-radius: 16px; 
+  padding-left: 25px;
+}
+.main-login input.control-x{
+  font-family: Mali-Bold;
+  border: none;
+  border-radius: 16px;
+  height: 35px;
+  padding-left: 15px;
+}
+.main-login textarea.form-control::placeholder {
+  color: #8fa3b8;
+}
+.main-login input.form-control::placeholder {
+  color: #8fa3b8;
+}
+.main-login .form-group span{
+  position: absolute; 
+  margin-top: -40px;
+  font-family: Mali-Bold;
+  color: red;
+  font-size: 24px;
+  margin-left: 10px;
+}
+.main-login h6{
+  color: #004f2b;
+  font-family: Mali-Bold;
+}
+
+.submx{
+  color: #fff;
+  background-color: #004f2b;
+  font-family: Mali-Bold;
+  padding: 11px 25px;
+  border-radius: 14px;
+  border:none;
+} 
+h3.ckp{
+  color: #004F2B;
+  font-family: Mali-Bold;
+}
+h3.ckp i{
+  color: #ff9a2f; 
+  font-size: 36px;
+}
+
+
+.form-check-label{
+  color: #004F2B;
+  font-family: Mali-Bold;
+  margin-left: 20px;
+}
+.form-x label.label-xf{
+  color: #8fa3b8;
+  font-family: Mali-Bold; 
+  padding-top: 5px;
+}
+
+.up-file{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  height: 35px;
+}
+
+.control-x{
+  display: none;
+}
+.form-check-input{
+  width: 16px;
+  height: 16px;
+  color: red;
+  margin-right: 20px;
+}
+.form-check-inline .form-check-input{
+  color: #004F2B;
+  font-family: Mali-Bold;
+  margin-left: 20px;
+}
+.but1{
+  background-color: #b3b5b8;
+  color: #000;
+  border-radius: 20px;
+  padding: 2px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 65px;
+  margin-top: 3px;
+}
+.but2{
+  background-color: #b3b5b8;
+  color: #000;
+  border-radius: 20px;
+  padding: 2px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 20px;
+  margin-top: 3px;
+}
+
+
 
 
 /*
+#004F2B
 4a752e
 87bf57
+
+004F2B
 */
