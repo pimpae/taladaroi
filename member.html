@@ -141,7 +141,8 @@
                     <div class="col text-center">
                         <ul class="map-pan">
                             <li><a href="#">หน้าแรก</a></li> 
-                            <li class="active">ลงทะเบียน</li>
+                            <li><a href="#">บัญชีผู้ใช้</a></li> 
+                            <li class="active">ข้อมูลสมาชิก</li>
                         </ul>
                     </div>
                 </div>
@@ -151,13 +152,80 @@
 
             <section>
                 <div class="container">
-                    <div class="col">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6 col-12 text-center "> 
-                                <h3 class="ckp"><i class="fas fa-check-circle"></i> ลงทะเบียนเรียบร้อย</h3>
+                    <div class="col member1">
+                        <div class="row">
+                            <div class="col-4 l1">
+                                <div class="col list-menu"> 
+                                    <h3>บัญชีผู้ใช้</h3> 
+                                    <div class="clearfix">&nbsp;</div>
+                                    <div class="clearfix">&nbsp;</div>
+                                    <ul>
+                                        <li class="active">
+                                            <a href="member.html"><img src="images/r-c.png"> ข้อมูลสมาชิก</a>
+                                        </li>
+                                        <li>
+                                            <a href="address.html"><img src="images/r-c.png"> ที่อยู่</a>
+                                        </li>
+                                        <li>
+                                            <a href="orders.html"><img src="images/r-c.png"> คำสั่งซื้อของฉัน</a>
+                                        </li>
+                                        <li>
+                                            <a href="points.html"><img src="images/r-c.png"> คะแนนที่สะสม</a>
+                                        </li>
+                                        <li>
+                                            <a href="favorite.html"><img src="images/r-c.png"> สินค้าที่ชื่นชอบ</a>
+                                        </li>
+                                        <li>
+                                            <a href="review.html"><img src="images/r-c.png"> รีวิวสินค้าของฉัน</a>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <div class="col-8 l2">
+                                <h3>ข้อมูลสมาชิก</h3> 
                                 <br>
-                                <a href="javascript:;" class="see-more"  onClick="seeMore(this)" data-id="3">ดำเนินการต่อ</a>
-                                 
+                                <form action="/">
+                                    <div class="form-group"> 
+                                        <input type="text" class="form-control bg2" placeholder="ชื่อ">
+                                        <span>*</span>
+                                    </div> 
+                                    <div class="form-group"> 
+                                        <input type="text" class="form-control bg2" placeholder="นามสกุล">
+                                        <span>*</span>
+                                    </div> 
+                                    <div class="form-group"> 
+                                        <input type="email" class="form-control bg2" placeholder="อีเมล">
+                                        <span>*</span>
+                                    </div> 
+                                    <div class="col text-center">
+                                        <a href="#" class="subm2">แก้ไข</a>
+                                        <button type="submit" class="submx2">บันทึก</button>
+                                    </div>
+                                </form> 
+                                <div class="clearfix">&nbsp;</div>
+                                <form action="/" class="bg2 setpad">
+                                    <h4>เปลี่ยนหมายเลขโทรศัพท์</h4>
+                                    <br>
+                                    <div class="form-group"> 
+                                        <input type="text" class="form-control" placeholder="หมายเลขโทรศัพท์เดิม">
+                                        <span>*</span>
+                                    </div> 
+                                    <div class="form-group"> 
+                                        <input type="text" class="form-control" placeholder="หมายเลขโทรศัพท์ใหม่">
+                                        <span>*</span>
+                                    </div> 
+                                    <div class="form-group"> 
+                                        <input type="text" class="form-control" placeholder="OTP">
+                                        <span>*</span>
+                                        <a href="#" class="otp-b">ขอรหัส OTP</a>
+                                    </div> 
+                                    <div class="col text-center"> 
+                                        <button type="submit" class="submx2">เปลี่ยนหมายเลขโทรศัพท์</button>
+                                    </div>
+                                </form> 
+                                <br>
+                                <label><span>*</span> หมายเลขโทรศัพท์ใหม่จะถูกใช้ในการเข้าสู่ระบบในครั้งถัดไป</label>
+                                <label><span>*</span> หากต้องการสอบถามเพิ่มเติมกรุณาติดต่อเจ้าหน้าที่ Call Center </label>
                             </div>
                         </div>
                     </div>
@@ -165,9 +233,8 @@
             </section>
 
             <div class="clearfix">&nbsp;</div>
+            <div class="clearfix">&nbsp;</div>
  
-
-
         </main>
 
         <div class="clearfix">&nbsp;</div>
