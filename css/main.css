@@ -1132,6 +1132,19 @@ h3.ckp i{
   font-family: Mali-Bold;
   color: #004F2B;
 }
+.member1 .l2 h5{ 
+  font-family: Mali-Bold;
+  color: #004F2B;
+}
+.member1 .l2 h1{ 
+  font-family: Mali-Bold;
+  color: #ed2127;
+  font-size: 48px;
+} 
+.member1 .l2 h6{ 
+  font-family: Mali-Bold;
+  color: #ed2127;
+}
 .member1 .l2 form.setpad{
   padding: 30px;
   border-radius: 24px;
@@ -1382,6 +1395,34 @@ h3.ckp i{
 .botx img.ee{
   height: 15px;
 }
+
+.m-shop{
+  background-color: #fff200;
+  border-radius: 12px;
+  padding: 5px;
+
+}
+.m-shop{   
+  background-image: url(../images/icon-pc.png);
+  background-repeat: no-repeat;
+  background-position: 15px bottom;
+  background-size: auto 80px;
+  margin-bottom: 30px;
+}
+.m-shop h5{  
+  font-family: Mali-Bold;
+  color: #4a752e; 
+  margin-left: 40%;  
+  padding-top: 30px;
+  padding-bottom: 25px;
+
+}
+
+
+
+
+
+
 
 
 /* 
