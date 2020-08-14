@@ -577,8 +577,16 @@ footer .ft-ul li a:hover{
     bottom: 0;
     right: 0;
     margin-right: 25px;
-    margin-bottom: 30px;
-    width: 60px;
+    margin-bottom: 20px;
+    width: 45px;
+  }
+  .botx .cart-like{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 85px;
+    margin-bottom: 20px;
+    width: 35px;
   }
   .read-more{ 
     margin-bottom: 10px; 
@@ -1265,11 +1273,120 @@ h3.ckp i{
 }
 
 
+.pagination #previous-page a{
+  font-family: Mali-Bold;
+  color: #004F2B;
+  font-size: 32px;
+  line-height: 20px;
+}
+.pagination #next-page a{
+  font-family: Mali-Bold;
+  color: #004F2B;
+  font-size: 32px;
+  line-height: 20px;
+}
+.pagination #previous-page a:hover{ 
+  color: #87bf57; 
+}
+.pagination #next-page a:hover{ 
+  color: #87bf57; 
+}
+.pagination .page-item {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.pagination .page-item .page-link{
+  border:none !important; 
+}
+.pagination .page-item.current-page .page-link{
+  border:none !important;
+  background-color: #d0d2d3;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-family: Mali-Bold;
+  color: #fff;
+  font-size: 22px;
+  padding-top: 0px;
+  line-height: 30px;
+}
+.pagination .page-item.current-page.active .page-link{
+  border:none !important;
+  background-color: #004f2b;
+}
+.cop select{
+  border: none;
+  font-family: Mali-Bold;
+  background-color: #EDEDEE;
+  height: 30px;
+  border-radius: 30px;
+  padding-top: 3px;
+}
+.cop p{  
+  transform: rotate(180deg);
+  font-family: Mali-Bold;
+  color: #401c0d;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -2px;
+  margin-right: 5px;
+}
+.cop select::-ms-expand {  display: none; }
+.cop select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.cop label{
+  font-family: Mali-Bold;
+  color: #401c0d;
+  font-size: 22px;
+}
+.cop .form-group{
+  margin-bottom: -25px;
+}
+.abpr .col-2{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -10px;
+}
+.abpr label{
+  margin-right: 80px;
+}
+.tag-art{
+  font-family: Mali-Bold;
+  color: #fff;
+  background-color: #669c36;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+.tag-art:hover{ 
+  color: #fff; 
+}
+.botx p{
+  font-family: Mali-Bold;
+  color: #401c0d;
+  margin-bottom: 0px;
+}
+.botx p span{ 
+  color: #669c36;
+}
+.botx img.sh{ 
+  height: 35px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.botx img.ee{
+  height: 15px;
+}
 
 
+/* 
+401c0d
 
-/*
-#004F2B
 4a752e
 87bf57
 669c36
