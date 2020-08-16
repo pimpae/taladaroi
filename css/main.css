@@ -2151,7 +2151,9 @@ div.badgex{
   margin-top: 5px;  
   
 }
- 
+.form-control{
+  font-family: Mali-Bold;
+} 
 
 @media only screen and (max-width: 991px) { /* MOBILE */
   footer h4{
