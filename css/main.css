@@ -1225,8 +1225,7 @@ h3.ckp i{
 }
 .cop label{
   font-family: Mali-Bold;
-  color: #401c0d;
-  font-size: 22px;
+  color: #401c0d; 
 }
 .cop .form-group{
   margin-bottom: -25px;
@@ -1575,8 +1574,7 @@ h3.t3{
   font-family: Mali-Bold;
   color: #fff !important;
   padding: 6px 12px;
-  border-radius: 12px;
-  position: absolute;
+  border-radius: 12px; 
   right: 0;
   margin-right: 85px;
 }
@@ -1585,8 +1583,7 @@ h3.t3{
   font-family: Mali-Bold;
   color: #fff !important;
   padding: 6px 12px;
-  border-radius: 12px;
-  position: absolute;
+  border-radius: 12px; 
   right: 0;
   margin-right: 15px;
 }
@@ -2100,8 +2097,7 @@ div.badgex{
   width: 80px; 
 }
 .payment-ul ul{
-  list-style: none; 
-  padding-bottom: 15px;
+  list-style: none;  
 }
 .payment-ul ul li{
   padding-left: 25px; 
@@ -2120,19 +2116,7 @@ div.badgex{
   display: inline-block;
   margin-top: -20px;
 }
-.payment-ul ul li:after{ 
-  content: "";
-  background-image: url(../images/lio.png);
-  background-repeat: no-repeat;   
-  width: 30px;
-  height: 30px;
-  background-size: 15px auto; 
-  position: absolute;
-  left: 0;  
-  margin-left: 55px;
-  margin-top: 5px;  
-  
-}
+
 .form-control{
   font-family: Mali-Bold;
 } 
@@ -2317,6 +2301,65 @@ div.badgex{
   .member1 .l1 ul li a{ 
     font-size: 16px;
   }
+  .btn-dw{ 
+    position: ; 
+    font-size: 14px;
+  }
+  .btn-pdf{ 
+    position: ; 
+    float: right;
+    right: 0;
+    font-size: 14px;
+  }
+  .f-div h3{
+    font-size: 22px;
+  }
+  .review-main h4 {
+    font-size: 18px;
+  }
+  .btn-pdfx{
+    font-size: 11px;
+  }
+  .see-more.float-right{
+    font-size: 11px;
+    margin-top:  5px;
+  }
+  .review-main h3 {
+    font-size: 22px;
+  }
+  .order-list table tbody tr td:nth-child(3){ 
+    min-width: 220px;
+  }
+  .payment-ul ul{ 
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .payment-ul ul li:before{ 
+    content: "";
+    background-image: url(../images/lio.png);
+    background-repeat: no-repeat;   
+    width: 30px;
+    height: 30px;
+    background-size: 15px auto; 
+    position: absolute;
+    left: 0;  
+    margin-left: 15px;
+    margin-top: 5px;  
+    
+  }
+  .cop label{ 
+    font-size: 12px;
+  }
+  .review-box p{
+    font-size: 11px;
+    margin-top: 40px;
+  }
+  .review-box .r:after {
+    margin-top: 40px;
+  }
+  .adds-box{
+    margin-bottom: 15px;
+  }
 }
 @media only screen and (min-width: 992px) { /* PC */
   footer h4{
@@ -2453,6 +2496,32 @@ div.badgex{
   }
   .member1 .l1 ul li a{ 
     font-size: 20px;
+  }
+
+  .btn-dw{ 
+    position: absolute; 
+  }
+  .btn-pdf{ 
+    position: absolute; 
+  }
+  .payment-ul ul{ 
+    padding-bottom: 15px;
+  }
+  .payment-ul ul li:before{ 
+    content: "";
+    background-image: url(../images/lio.png);
+    background-repeat: no-repeat;   
+    width: 30px;
+    height: 30px;
+    background-size: 15px auto; 
+    position: absolute;
+    left: 0;  
+    margin-left: 55px;
+    margin-top: 5px;  
+    
+  }
+  .cop label{ 
+    font-size: 22px;
   }
 }
 
