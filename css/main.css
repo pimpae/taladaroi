@@ -1597,10 +1597,8 @@ h3.t3{
 }
 .del-x{
   color: #d2232a;
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  margin-right: -15px;
+  font-size: 24px; 
+  margin-right: 15px;
 }
 .del-x:hover{
   color: #f00; 
@@ -1731,7 +1729,7 @@ div.badgex{
   background-color: #669c36;
   color: #fff;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 .order-list table tbody{ 
   border-bottom: 2px solid #669c36;
@@ -1753,7 +1751,7 @@ div.badgex{
   text-align: left;
 }
 .order-list table tbody tr td:nth-child(4){ 
-  font-size: 20px;
+  font-size: 16px;
 }
 .order-list table tbody tr td:nth-child(5){ 
   font-size: 20px;
@@ -1764,6 +1762,7 @@ div.badgex{
 
 .order-list table tbody h5{ 
   color: #004f2b;
+  font-size: 18px;
 }
 .order-list table tbody h6{ 
   color: #004f2b;
