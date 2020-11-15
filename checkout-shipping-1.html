@@ -484,29 +484,29 @@
 
             $('.input-group').on('click', '.button-plus', function(e) {
                 incrementValue(e);
-                var sum = 0;
-                $('#myTable > tbody  > tr').each(function() { 
-                    var qty = parseFloat($(this).find('.quantity-field').val() || 0,10);
-                    var price = parseFloat($(this).find('.price').text() || 0,10);
-                    var amount = (qty*price); 
-                    sum+=amount;
-                    $(this).find('.amount span').text(''+amount);
-                    
-                }); 
-                $('.sum').text(sum);
-                var delivery =  parseFloat($('.delivery').text()) || 0;                     
-                totalsum = sum+delivery; 
-                $('.total-sum').text(totalsum);
+                update_amounts();
 
             });
 
             $('.input-group').on('click', '.button-minus', function(e) {
                 decrementValue(e);  
+                update_amounts();
+            });  
+
+            $(document).ready(function(){
+
+                update_amounts();
+                $('.qty').change(function() {
+                    update_amounts(); 
+                }); 
+            });
+            function update_amounts(){
                 var sum = 0;
-                $('#myTable > tbody  > tr').each(function() { 
+                var totalsum = 0;
+                $('#myTable > tbody  > tr').each(function() {
                     var qty = parseFloat($(this).find('.quantity-field').val() || 0,10);
                     var price = parseFloat($(this).find('.price').text() || 0,10);
-                    var amount = (qty*price); 
+                    var amount = (qty*price);
                     sum+=amount;
                     $(this).find('.amount span').text(''+amount);
                 }); 
@@ -514,33 +514,7 @@
                 var delivery =  parseFloat($('.delivery').text()) || 0;                     
                 totalsum = sum+delivery; 
                 $('.total-sum').text(totalsum);
-            });  
-
-
-            $(document).ready(function(){
-
-                update_amounts();
-                $('.qty').change(function() {
-                    update_amounts();  
-                }); 
-
-                function update_amounts(){
-                    var sum = 0;
-                    var totalsum = 0;
-                    $('#myTable > tbody  > tr').each(function() {
-                        var qty = parseFloat($(this).find('.quantity-field').val() || 0,10);
-                        var price = parseFloat($(this).find('.price').text() || 0,10);
-                        var amount = (qty*price);
-                        sum+=amount;
-                        $(this).find('.amount span').text(''+amount);
-                    }); 
-                    $('.sum').text(sum);
-                    var delivery =  parseFloat($('.delivery').text()) || 0;                     
-                    totalsum = sum+delivery; 
-                    $('.total-sum').text(totalsum);
-                }
-            });
- 
+            }
 
         </script>
 
