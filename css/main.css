@@ -72,20 +72,21 @@ header .top-1{
 header .top-1 .ul-1{
   list-style: none;
   padding-top: 15px;
-  padding-left: 0px;
+  
 
 }
 header .top-1 .ul-1 li{
   display: inline;
-  border-bottom: 3px solid #87bf57;
+  border-bottom: 2px solid #669C36;
   padding-bottom: 15px;
 }
 header .top-1 .ul-1 li a{
-  color: #4a752e;
-  padding-left: 15px;
-  padding-right: 15px;
+  color: #669C36;
+  padding-left: 5px;
+  padding-right: 5px;
   font-family: Mali-Bold;
-  border-right: 2px solid #4a752e;
+  border-right: 2px solid #669C36;
+  font-size: 14px;
 }
 
 header .top-1 .ul-1 li a:last-child{
@@ -180,11 +181,11 @@ a.login:hover{
 }
 
 .navbar-brand img{
-  width: 145px;
+  width: 165px;
   position: absolute;
   left: 0;
   top: 0;
-  margin-left: -130px;
+  margin-left: -160px;
   margin-top: -50px;
 }
 .top-3{
@@ -2419,26 +2420,31 @@ table.table tbody tr td.sum span:after{
   }
 
   .top-3 .navbar-nav .nav-item:nth-child(1) .nav-link p{
-    background-image: url(../images/m1.png);
+    background-image: url(../images/menu01.png);
   }
   .top-3 .navbar-nav .nav-item:nth-child(2) .nav-link p{
-    background-image: url(../images/m2.png);
+    background-image: url(../images/menu02.png);
   }
   .top-3 .navbar-nav .nav-item:nth-child(3) .nav-link p{
-    background-image: url(../images/m3.png);
+    background-image: url(../images/menu03.png);
   }
   .top-3 .navbar-nav .nav-item:nth-child(4) .nav-link p{
-    background-image: url(../images/m4.png);
+    background-image: url(../images/menu04.png);
   }
   .top-3 .navbar-nav .nav-item:nth-child(5) .nav-link p{
-    background-image: url(../images/m5.png);
+    background-image: url(../images/menu05.png);
   }
   .top-3 .navbar-nav .nav-item:nth-child(6) .nav-link p{
-    background-image: url(../images/m6.png);
+    background-image: url(../images/menu06.png);
   }
   .top-3 .navbar-nav .nav-item:nth-child(7) .nav-link p{
-    background-image: url(../images/m7.png);
+    background-image: url(../images/menu07.png);
   }
+  .top-3 .navbar-nav .nav-item:nth-child(8) .nav-link p{
+    background-image: url(../images/menu08.png);
+  }
+
+
   header .cart{
     background-color: #fff;
     width: 75px;
