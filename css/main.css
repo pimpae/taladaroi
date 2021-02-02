@@ -543,6 +543,16 @@ ul.map-pan li{
   padding-right: 5px;
 
 }
+.mapxa p{
+  font-size: 18px; 
+  color: #422500;
+  font-family: Mali-Bold;  
+  text-align: center;
+  padding-top: 15px;
+}
+.mapxa img{
+  max-height: 120px;
+}
 ul.map-pan li:after{
   content: ">";
   font-family: Mali-Bold; 
