@@ -43,6 +43,9 @@
   }
   .none-xs{
     padding: 0px 0px 0px 0px !important;
+  } 
+  .none-xs5{
+    padding: 0px 5px 0px 5px !important;
   }   
 }
 @media only screen and (min-width: 992px) { /* PC */
@@ -96,21 +99,8 @@ header .top-1 .ul-1 li a:hover{
   color: #87bf57;
 }
 
-header .cart img{
-  width: 45px;
-  padding-top: 10px;
-}
-header .cart p{
-  width: 25px;
-  height: 25px;
-  background-color: #ff0000;
-  border-radius: 100%;
-  color: #fff;
-  font-family: Mali-Bold;
-  margin: auto;
-  display: block;
-  margin-top: 10px;
-}
+
+
 .top-c{
   margin-top: 25px;
 }
@@ -2185,6 +2175,7 @@ table.table tbody tr td.sum span:after{
 @media only screen and (max-width: 991px) { /* MOBILE */
   footer h4{
     text-align: center;
+    border-bottom: 1px solid #87bf57;
   } 
   .carousel-control-prev-icon { 
     background-size: 30px;
@@ -2225,14 +2216,13 @@ table.table tbody tr td.sum span:after{
     max-width: 120px;
   }
   footer h4{
-    font-size: 16px;
+    font-size: 14px;
   }
   footer .ft-ul li a{
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 16px;
   }
-  header .cart{
-    background-color: #EDEDEE;
+  header .cart{ 
     width: 65px; 
     float: right;  
     border-radius: 0px 0px 45px 45px;
@@ -2240,6 +2230,7 @@ table.table tbody tr td.sum span:after{
     right: 0;
     top: 0;
     z-index: 1020;
+    margin-right: 30px;
   }
   .navbar{
     background-color: #fff;
@@ -2421,6 +2412,48 @@ table.table tbody tr td.sum span:after{
   .adds-box{
     margin-bottom: 15px;
   }
+  .logo-mb{
+    width: 70px;
+    height: 70px; 
+  }
+  .logo-soc{
+    width: 20px;
+    height: 20px;
+    margin: 25px 4px 0;
+  }
+  .lin-text{
+    font-size: 16px;
+    line-height: 28px;  
+    font-family: Mali-Bold;
+    text-transform: capitalize; 
+    color: #004F2B; 
+    margin: 20px 4px 0;
+  }
+  header .cart img{
+    width: 36px;
+    height: 36px;
+    margin-top: 20px;
+  }
+  header .cart p{
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    border-radius: 100%;
+    color: #fff;
+    font-family: Mali-Bold;
+    margin: auto;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .user-lix{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
 }
 @media only screen and (min-width: 992px) { /* PC */
   footer h4{
@@ -2589,6 +2622,21 @@ table.table tbody tr td.sum span:after{
   }
   .cop label{ 
     font-size: 22px;
+  }
+  header .cart img{
+    width: 45px;
+    padding-top: 10px;
+  }
+  header .cart p{
+    width: 25px;
+    height: 25px;
+    background-color: #ff0000;
+    border-radius: 100%;
+    color: #fff;
+    font-family: Mali-Bold;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
   }
 }
 
