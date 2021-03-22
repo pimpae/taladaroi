@@ -222,7 +222,18 @@ h3.hob span{
   padding-left: 30px;
   padding-right: 30px;
 }
-
+main{
+  background: url(../images/Background-Body.png);
+  background-repeat: no-repeat;  
+  background-position: auto 100%;
+  background-position: bottom;
+}
+footer{
+  background: url(../images/Background-Footer.png);
+  background-repeat: no-repeat;  
+  background-position: auto 100%;
+  background-position: center bottom;
+}
 .main{
   margin-bottom: 30px;
 }
