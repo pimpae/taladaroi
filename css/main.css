@@ -2481,7 +2481,7 @@ table.table tbody tr td.sum span:after{
     right: 0;
     top: 0;
     margin-top: -45px; 
-    margin-right: -70px;
+    margin-right: -25%;
   }
   .user-lix .dropdown-menu{
     right: 0 !important;
