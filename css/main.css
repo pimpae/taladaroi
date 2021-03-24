@@ -2253,7 +2253,7 @@ table.table tbody tr td.sum span:after{
     right: 0;
     top: 0;
     z-index: 10;
-    margin-right: 15px;
+    margin-right: 20px;
   } 
   .navbar{
     /*background-color: #fff;*/
