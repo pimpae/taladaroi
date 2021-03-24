@@ -2480,8 +2480,7 @@ table.table tbody tr td.sum span:after{
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: -45px; 
-    margin-right: -25%;
+    margin-top: -45px;  
   }
   .user-lix .dropdown-menu{
     right: 0 !important;
