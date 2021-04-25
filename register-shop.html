@@ -82,10 +82,12 @@
                 </a>
 
                 <a href="index.html"><img src="images/logo.png" class="logo-mb pc-x"></a>
-                <a href="#"><img src="images/icon_c1.png" class="logo-soc pc-x"></a>
-                <a href="#"><img src="images/icon_c2.png" class="logo-soc pc-x"></a>
-                <a href="#"><img src="images/icon_c3.png" class="logo-soc pc-x"></a>
-                <a href="#" class="lin-text pc-x">@taladaroi</a>
+                <div class="search-top">
+                    <form class="form-search">
+                        <input type="text" placeholder="ค้นหา" class="search">
+                        <button type="submit"><img src="images/mini_search.png"></button>
+                    </form>
+                </div>
 
                 <div class="dropdown user-lix">
                     <a   class=" " data-toggle="dropdown">
@@ -226,62 +228,119 @@
                                 </div>
                                 <br>
                                 <form class="form-x" action="register-shop-complete.html">
-                                    <div class="form-group">
-                                        <div class="form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="optradio">บุคคลธรรมดา
-                                            </label>
+                                        <div class="form-group">
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="form_per" value="1">บุคคลธรรมดา
+                                                </label>
+                                            </div>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="form_per" value="2">นิติบุคคล
+                                                </label>
+                                            </div>
                                         </div>
-                                        <div class="form-check-inline">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="optradio">นิติบุคคล
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group"> 
-                                        <input type="text" class="form-control" placeholder="ชื่อร้านค้า">
-                                        <span>*</span>
-                                    </div> 
-                                    <div class="form-group"> 
-                                        <input type="text" class="form-control" placeholder="ชื่อ">
-                                        <span>*</span>
-                                    </div> 
-                                    <div class="form-group"> 
-                                        <input type="text" class="form-control" placeholder="นามสกุล">
-                                        <span>*</span>
-                                    </div> 
-                                    <div class="form-group"> 
-                                        <input type="text" class="form-control" placeholder="หมายเลขโทรศัพท์">
-                                        <span>*</span>
-                                    </div> 
-                                    <div class="form-group"> 
-                                        <input type="email" class="form-control" placeholder="อีเมล">
-                                        <span>*</span>
-                                    </div> 
-                                    <div class="form-group"> 
-                                        <textarea class="form-control" rows="5" placeholder="รายละเอียด"></textarea> 
-                                    </div> 
 
-                                    <h6>อัพโหลดบัตรประชาชน</h6>
 
-                                    <div class="form-group row" style="margin-bottom: 0px;">
-                                        <label class="col-lg-3 label-xf">ด้านหน้าบัตร</label> 
-                                        <div class="col-lg-9 ">
-                                            <input type="file" class="form-control control-x" id="flie-up" placeholder="หมายเลขโทรศัพท์">
-                                            <label for="flie-up" class="up-file"></label>
-                                            <label for="flie-up" class="but1"><i class="fas fa-camera"></i></label>
-                                            <label for="flie-up" class="but2"><i class="far fa-image"></i></label>
+                                        <div class="col p-0" id="form1">
+                                            
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="ชื่อร้านค้า">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="ชื่อ">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="นามสกุล">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="หมายเลขโทรศัพท์">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="email" class="form-control" placeholder="อีเมล">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <textarea class="form-control" rows="5" placeholder="รายละเอียด"></textarea> 
+                                            </div> 
+
+                                            <h6>อัพโหลดบัตรประชาชน</h6>
+
+                                            <div class="form-group row" style="margin-bottom: 0px;">
+                                                <label class="col-lg-3 label-xf">ด้านหน้าบัตร</label> 
+                                                <div class="col-lg-9 ">
+                                                    <input type="file" class="form-control control-x" id="flie-up" placeholder="หมายเลขโทรศัพท์">
+                                                    <label for="flie-up" class="up-file"></label>
+                                                    <label for="flie-up" class="but1"><i class="fas fa-camera"></i></label>
+                                                    <label for="flie-up" class="but2"><i class="far fa-image"></i></label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-3 label-xf">ด้านหลังบัตร</label> 
+                                                <div class="col-lg-9 ">
+                                                    <input type="file" class="form-control control-x" id="flie-up" placeholder="หมายเลขโทรศัพท์">
+                                                    <label for="flie-up" class="up-file"></label>
+                                                    <label for="flie-up" class="but1"><i class="fas fa-camera"></i></label>
+                                                    <label for="flie-up" class="but2"><i class="far fa-image"></i></label>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-lg-3 label-xf">ด้านหลังบัตร</label> 
-                                        <div class="col-lg-9 ">
-                                            <input type="file" class="form-control control-x" id="flie-up" placeholder="หมายเลขโทรศัพท์">
-                                            <label for="flie-up" class="up-file"></label>
-                                            <label for="flie-up" class="but1"><i class="fas fa-camera"></i></label>
-                                            <label for="flie-up" class="but2"><i class="far fa-image"></i></label>
+
+                                        <div class="col p-0" id="form2">
+                                            
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="ชื่อร้านค้า">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="ชื่อผู้ติดต่อ">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="นามสกุลผู้ติดต่อ">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="หมายเลขโทรศัพท์">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="text" class="form-control" placeholder="หมายเลขโทรศัพท์มือถือ">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <input type="email" class="form-control" placeholder="อีเมล">
+                                                <span>*</span>
+                                            </div> 
+                                            <div class="form-group"> 
+                                                <textarea class="form-control" rows="5" placeholder="ที่อยู่"></textarea> 
+                                            </div> 
+
+                                            <h6>อัพโหลดบัตรประชาชน</h6>
+
+                                            <div class="form-group row" style="margin-bottom: 0px;">
+                                                <label class="col-lg-3 label-xf">ด้านหน้าบัตร</label> 
+                                                <div class="col-lg-9 ">
+                                                    <input type="file" class="form-control control-x" id="flie-up" placeholder="หมายเลขโทรศัพท์">
+                                                    <label for="flie-up" class="up-file"></label>
+                                                    <label for="flie-up" class="but1"><i class="fas fa-camera"></i></label>
+                                                    <label for="flie-up" class="but2"><i class="far fa-image"></i></label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-lg-3 label-xf">ด้านหลังบัตร</label> 
+                                                <div class="col-lg-9 ">
+                                                    <input type="file" class="form-control control-x" id="flie-up" placeholder="หมายเลขโทรศัพท์">
+                                                    <label for="flie-up" class="up-file"></label>
+                                                    <label for="flie-up" class="but1"><i class="fas fa-camera"></i></label>
+                                                    <label for="flie-up" class="but2"><i class="far fa-image"></i></label>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
 
 
                                     <div class="col text-center">
@@ -418,6 +477,24 @@
         <script src="js/lightslider.js"></script>
 
         <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v7.0" nonce="SlEBHGjO"></script> 
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v7.0" nonce="SlEBHGjO"></script>
+        
+        <script>
+            
+
+            $('input[name=form_per]').on('change', function() {
+                
+                if($('input[name=form_per]:checked').val()==1){
+                    $('#form2').hide();
+                    $('#form1').show();
+                }
+                else {
+                    $('#form1').hide();
+                    $('#form2').show();
+                }
+            });
+        </script>
+
+
     </body>
 </html>

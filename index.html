@@ -82,11 +82,14 @@
                 </a>
 
                 <a href="index.html"><img src="images/logo.png" class="logo-mb pc-x"></a>
-                <a href="#"><img src="images/icon_c1.png" class="logo-soc pc-x"></a>
-                <a href="#"><img src="images/icon_c2.png" class="logo-soc pc-x"></a>
-                <a href="#"><img src="images/icon_c3.png" class="logo-soc pc-x"></a>
-                <a href="#" class="lin-text pc-x">@taladaroi</a>
 
+                <div class="search-top">
+                    <form class="form-search">
+                        <input type="text" placeholder="ค้นหา" class="search">
+                        <button type="submit"><img src="images/mini_search.png"></button>
+                    </form>
+                </div>
+            
                 <div class="dropdown user-lix">
                     <a   class=" " data-toggle="dropdown">
                         <img src="images/user.png" class="pc-x">
@@ -98,6 +101,7 @@
                         <a class="dropdown-item" href="points.html">คะแนนสะสม</a>
                         <a class="dropdown-item" href="favorite.html">สินค้าที่ชื่นชอบ</a>
                         <a class="dropdown-item" href="review.html">รีวิวสินค้าของฉัน</a> 
+                        <a class="dropdown-item-logout" href="login.html">ลงชื่อออก</a>
                     </div>
                 </div>
 
@@ -167,8 +171,28 @@
 
                             <h3 class="hed"><span>หมวดหมู่</span></h3>
                             <ul class="xs">
-                                <li><img src="images/menu02.png"> <a href="product.html">ผักและผลไม้ </a></li>
-                                <li><img src="images/menu03.png"> <a href="product.html">อาหาร </a></li>
+                                <li><img src="images/menu02.png"> <a href="product.html">ผักและผลไม้ </a></li> 
+
+                                <li class="hide-tx">
+                                    <img src="images/menu03.png">
+                                    <span>อาหาร</span>
+                                    <ul class="subx">
+                                        <li>
+                                            <a href="product.html"><img src="images/menu03.png"> ผลไม้ต่างประเทศ </a>
+                                        </li>
+                                        <li>
+                                            <a href="product.html"><img src="images/menu03.png"> สินค้าแปรรูป</a> 
+                                        </li>
+                                        <li>
+                                            <a href="product.html"><img src="images/menu03.png"> อาหารทะเล</a> 
+                                        </li>
+                                        <li>
+                                            <a href="product.html"><img src="images/menu03.png"> ผัก</a> 
+                                        </li>
+                                    </ul>
+                                </li>
+
+
                                 <li><img src="images/menu04.png"> <a href="product.html">เครื่องปรุงอาหาร </a></li>
                                 <li><img src="images/menu05.png"> <a href="product.html">อาหารทานเล่น </a></li>
                                 <li><img src="images/menu06.png"> <a href="product.html">เครื่องดื่ม </a></li>
@@ -198,7 +222,7 @@
 
         <div class="clearfix  ">&nbsp;</div>
         <div class="clearfix  ">&nbsp;</div>
-        <div class="clearfix mb-x">&nbsp;</div>
+        <div class="clearfix ">&nbsp;</div>
 
         <main>
             <section>
@@ -559,120 +583,7 @@
                 </div>
             </section>
 
-
-            <div class="clearfix">&nbsp;</div>
-
-            <section class="main" id="product4">
-                <div class="container text-center">
-                    <h3 class="hob"><span>หมวดหมู่สินค้า</span></h3>
-                    <div class="col item p-0 product4">
-                        <div class="row">
-                            <div class="col-lg-3 col-4 itm v4">
-                                <a href="#">
-                                    <img src="images/icon-m2.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">ผักและผลไม้</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-3 col-4 itm v4">
-                                <a href="#">
-                                    <img src="images/icon-m3.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">อาหารและเครื่องปรุง</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-3 col-4 itm v4">
-                                <a href="#">
-                                    <img src="images/icon-m4.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">ขนมและเครื่องดื่ม</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-3 col-4 itm v4">
-                                <a href="#">
-                                    <img src="images/icon-m5.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">สวนและร้านค้า</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-3 col-4 itm v4">
-                                <a href="#">
-                                    <img src="images/icon-m2.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">ผักและผลไม้</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-3 col-4 itm v4">
-                                <a href="#">
-                                    <img src="images/icon-m3.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">อาหารและเครื่องปรุง</h5>
-                                </a> 
-                            </div> 
-                        </div>
-
-                    </div>
-                    <a href="javascript:;" class="see-more"  onClick="seeMore(this)" data-id="4">ดูเพิ่มเติม</a>
-                </div>
-            </section>
-
-            <div class="clearfix">&nbsp;</div>
-
-            <section class="main" id="product5">
-                <div class="container text-center">
-                    <h3 class="hob"><span>หมวดหมู่ร้านค้า</span></h3>
-                    <div class="col item p-0 product5">
-                        <div class="row">
-                            <div class="col-lg-2 col-4 itm v6">
-                                <a href="#">
-                                    <img src="images/icon-m1.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">สวนอำนาจ</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-2 col-4 itm v6">
-                                <a href="#">
-                                    <img src="images/icon-m1.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">สวนภูษิต</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-2 col-4 itm v6">
-                                <a href="#">
-                                    <img src="images/icon-m1.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">ร้านไพวรรณ</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-2 col-4 itm v6">
-                                <a href="#">
-                                    <img src="images/icon-m1.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">สวนวราภรณ์</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-2 col-4 itm v6">
-                                <a href="#">
-                                    <img src="images/icon-m1.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">สวนอำนาจ</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-2 col-4 itm v6">
-                                <a href="#">
-                                    <img src="images/icon-m1.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">สวนภูษิต</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-2 col-4 itm v6">
-                                <a href="#">
-                                    <img src="images/icon-m1.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">ร้านไพวรรณ</h5>
-                                </a> 
-                            </div> 
-                            <div class="col-lg-2 col-4 itm v6">
-                                <a href="#">
-                                    <img src="images/icon-m1.png" class="img-fluid d-block mx-auto max-m"> 
-                                    <h5 class="h5m">สวนวราภรณ์</h5>
-                                </a> 
-                            </div> 
-
-                        </div>
-
-                    </div>
-                    <a href="javascript:;" class="see-more"  onClick="seeMore(this)" data-id="5">ดูเพิ่มเติม</a>
-                </div>
-            </section>
-
+ 
             <div class="clearfix">&nbsp;</div>
 
             <section class="main" id="product6">
@@ -970,7 +881,10 @@
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v7.0" nonce="SlEBHGjO"></script>
         <script type="text/javascript">
-
+            $(".hide-tx").click(function() {
+                $(this).toggleClass("active");  
+            });
+            
             function seeMore(elem){
                 var daID = $(elem).data("id");
                 //alert(daID);exit();
@@ -1011,6 +925,11 @@
                
             });
 
+        </script>
+        <script type="text/javascript">
+            $(".hide-tx").click(function() {
+                $(this).toggleClass("active");  
+            });
         </script>
 
     </body>

@@ -231,7 +231,7 @@ main{
 footer{
   background: url(../images/Background-Footer.png);
   background-repeat: no-repeat;  
-  background-position: auto 100%;
+  background-size: auto 100%;
   background-position: center bottom;
 }
 .main{
@@ -1319,20 +1319,21 @@ h3.ckp i{
   padding: 5px;
 
 }
-.m-shop{   
+.m-shop{    /* 24-04-65 */
   background-image: url(../images/icon-pc.png);
   background-repeat: no-repeat;
   background-position: 15px bottom;
   background-size: auto 80px;
   margin-bottom: 30px;
+  height: 100px
 }
-.m-shop h5{  
+.m-shop h5{   /* 24-04-65 */
   font-family: Mali-Bold;
-  color: #004F2B; 
-  margin-left: 40%;  
-  padding-top: 30px;
-  padding-bottom: 25px;
-
+  color: #004F2B;   
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
 } 
 h3.t3{
   font-family: Mali-Bold;
@@ -2147,10 +2148,11 @@ table.table tbody tr td.sum span:after{
 .payment h3{
   font-family: Mali-Bold;
   color: #401c0d !important;
+  font-size: 18px;
 }
 .payment h4{
   font-family: Mali-Bold;
-  color: #004f2b !important;
+  color: #004f2b !important; 
 }
 
 .payment .row .col-lg-3:nth-child(4) .box-pay:after{ 
@@ -2174,7 +2176,7 @@ table.table tbody tr td.sum span:after{
 .payment-ul ul li p{ 
   font-family: Mali-Bold;
   color: #004f2b !important; 
-  display: inline-block;
+  display: inline-block; 
 }
 .payment-ul ul li img.mt{
   display: inline-block;
@@ -2241,8 +2243,11 @@ table.table tbody tr td.sum span:after{
   footer h4{
     font-size: 14px;
   }
+  footer .ft-ul li { 
+    line-height: 10px;
+  }
   footer .ft-ul li a{
-    font-size: 10px;
+    font-size: 9px;
     line-height: 16px;
   }
   header .cart{ 
@@ -2253,7 +2258,7 @@ table.table tbody tr td.sum span:after{
     right: 0;
     top: 0;
     z-index: 10;
-    margin-right: 20px;
+    margin-right: 30px;
   } 
   .navbar{
     /*background-color: #fff;*/
@@ -2280,7 +2285,7 @@ table.table tbody tr td.sum span:after{
   }
   .order-0{
     flex: 0 0 100%;
-    max-width: 100%;l
+    max-width: 100%;
   } 
   .form-search button{ 
     margin-right: 100px;
@@ -2328,7 +2333,7 @@ table.table tbody tr td.sum span:after{
     left: 0;  
     margin: auto;
     display: block;
-    margin-left: 60px;
+    margin-left: 72px;  /* 24-04-65 */
     margin-top: -40px; 
   } 
 
@@ -2343,8 +2348,8 @@ table.table tbody tr td.sum span:after{
     padding-left: 45px;
   }
   .contact h2{
-    padding-left: 30px;
-    font-size: 18px;
+    padding-left: 40px;
+    font-size: 16px;
   }
   .contact h2:after{
     content: "";
@@ -2440,10 +2445,10 @@ table.table tbody tr td.sum span:after{
   .adds-box{
     margin-bottom: 15px;
   }
-  .logo-mb{
-    width: 70px;
-    height: 70px; 
-    margin-left: -10px;
+  .logo-mb{ /* 24-04-65 */
+    width: 65px;
+    height: 65px; 
+    margin-left: -5px;
   }
   .logo-soc{
     width: 20px;
@@ -2482,6 +2487,7 @@ table.table tbody tr td.sum span:after{
     top: 0;
     margin-top: -45px;   
     margin-right: 5px;
+    width: 30px;
   }
   .user-lix .dropdown-menu{
     right: 0 !important; 
@@ -2490,7 +2496,8 @@ table.table tbody tr td.sum span:after{
     outline: none;
     border-radius: 20px;
     width: 240px;
-    height: 270px;
+    height: 320px; /* 24-04-65 */
+    z-index: 1200; /* 24-04-65 */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   }
   .user-lix .dropdown-menu .dropdown-item{
@@ -2544,7 +2551,7 @@ table.table tbody tr td.sum span:after{
   .men-mobile .modal-body{ 
   }
   h3.hed{
-    border-bottom: 3px solid #422500;
+    border-bottom: 1px solid #422500;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -2571,15 +2578,15 @@ table.table tbody tr td.sum span:after{
     padding-bottom: 6px;
   }
   .men-mobile ul.xs li img{
-    width: 48px;
+    width: 40px;
     height: auto;
   }
   .men-mobile ul.xs li a{
     color: #422500;
-    font-size: 20px;
+    font-size: 16px; /* 24-04-65 */
     line-height: 40px;
     font-family: Mali-Bold;
-    padding-left: 25px;
+    padding-left: 15px; /* 24-04-65 */
   }
   .top-c a.tel{
     font-size: 12px;
@@ -2614,15 +2621,219 @@ table.table tbody tr td.sum span:after{
     white-space: nowrap;
   }
   .payment .box-pay img{ 
-    height: 28px;
+    height: 20px; /* 24-04-65 */
     width: auto; 
     margin-top: -10px;
   }
   .linli{
     font-size: 11px;
   }
+
+  /* START 24-04-65 */
+
+  .payment .row .col-3:nth-child(2) .box-pay h6{ 
+    font-size: 8px !important;
+  }
+  footer .form-search{
+    display: none;
+  }
+  .logo-soc , .lin-text{
+    display: none;
+  }
+  .search-top{  
+    height: 50px; 
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 88px;
+    margin-top: 27px;
+    z-index: 1003;
+    text-align: right;
+  }
+  .search-top .form-search input{
+    width: 100% !important;
+    max-width: 80% !important;
+  }
+  .search-top button{
+    margin-right: 5px !important;
+    margin-top: 2px;
+  }
+  .payment h4{ 
+    font-size: 18px;
+  }   
+  .payment-ul ul li p{  
+    font-size: 12px;
+  }
+  .main .item .itm.vx {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .main .item .itm.v3 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .main .item .itm.v4 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    margin-bottom: 10px;
+  }
+  .main{
+    margin-bottom: 30px;
+  }
+  .main .item{
+    margin-bottom: 30px;
+  }   
+  .m-shop{ 
+    margin-bottom: 10px;
+    background-size: auto 60px; 
+    height: 75px;
+    background-position: 5px bottom ;
+  }
+  .m-shop h5{ 
+    left: 70%; 
+    font-size: 14px;
+    white-space: nowrap; 
+  } 
+  .navbar-toggler {
+    padding: 0.25rem 0.45rem;
+  }
+  .member1 .itm.v3 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .botx h5 {
+    font-size: 12px !important;
+  }
+  .botx h6 {
+    font-size: 11px !important;
+  }
+  .botx p {
+    font-size: 11px !important;
+    margin-top: 5px;
+  }
+  .tag-art { 
+    font-size: 8px !important; 
+  }
+  .botx img.ee {
+    height: 14px !important;
+  } 
+  .botx img.sh {
+    height: 14px;
+    margin-right: -20px;
+    margin-bottom: 25px;
+  }
+  .botx p span {
+    font-size: 8px;
+    padding-left: 5px;
+  }
+  .botx { 
+    padding: 30px 10px 20px 10px;
+  }
+  .imap-po img{
+    max-width: 48px;
+  }
+  .imap-po p{
+    font-family: Mali-Bold;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #422500;
+  }
+  footer { 
+    background-size: 160% 40%; 
+    background-position: left bottom;
+  }
+  
+  .ft-logo{
+    display: block !important;
+  }
+  body{ 
+    background-image: url(../images/bg-top.png); 
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 120% 70px;
+  }
+  .dropdown-item-logout{
+    color: #fff;
+    background-color: #004F2B;
+    font-family: Mali-Bold;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 60px;
+    margin-top: 25px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    line-height: 50px;
+  }
+  .men-mobile ul.xs li{
+    color: #422500;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: Mali-Bold;
+    padding-left: 15px;
+  }
+  .men-mobile ul.xs li span{ 
+    padding-left: 15px;
+  }
+  .men-mobile ul.xs li .subx li{ 
+    line-height: 10px;
+    padding: 0; 
+  }
+  .hide-tx{
+    height: 45px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .33s all ease-out; 
+  }
+  .hide-tx.active{
+    height: 100%; 
+  }
+  .hide-tx:before{
+    content: "";
+    position: relative;
+    float: right;
+    right: 0;
+    top: 0;
+    background: url(../images/arrow-r.png);
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    transition: .33s all ease-out;
+  }
+  .hide-tx.active:before{ 
+    transform: rotate(90deg);
+  }
+  
+
+  /* END 24-04-65 */
 }
+
+/* START 24-04-65 */
+@media only screen and (width: 768px) { /* IPAD */ 
+  .search-top{ 
+    width: 340px;  
+  }
+  .main .item .itm.vx {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .main .item .itm.v3 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+/* END 24-04-65 */
 @media only screen and (min-width: 992px) { /* PC */
+  .imap-po img{
+    max-width: 100px;
+  }
+  .imap-po p{
+    font-family: Mali-Bold;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #422500;
+  }
   .linli{
     font-size: 16px;
   }
@@ -2745,7 +2956,7 @@ table.table tbody tr td.sum span:after{
     height: 60px; 
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 50px 50px;
+    background-size: 50px auto;
     position: absolute;
     left: 0; 
     margin-left: -45px;
@@ -2816,7 +3027,9 @@ table.table tbody tr td.sum span:after{
   }
 }
 
-
+#form2{ /* 24-04-65 */
+  display: none;
+}
 
 
 
