@@ -236,7 +236,7 @@
                                             </div>
                                             <div class="form-check-inline">
                                                 <label class="form-check-label">
-                                                    <input type="radio" class="form-check-input" name="form_per" value="2">นิติบุคคล
+                                                    <input type="radio" class="form-check-input" name="form_per" checked value="2">นิติบุคคล
                                                 </label>
                                             </div>
                                         </div>
@@ -481,6 +481,12 @@
         
         <script>
             
+            $(document).ready(function(){
+
+                $('#form1').hide();
+    
+
+            });
 
             $('input[name=form_per]').on('change', function() {
                 

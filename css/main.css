@@ -2349,7 +2349,7 @@ table.table tbody tr td.sum span:after{
   }
   .contact h2{
     padding-left: 40px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .contact h2:after{
     content: "";
@@ -2421,7 +2421,7 @@ table.table tbody tr td.sum span:after{
   }
   .payment-ul ul li:before{ 
     content: "";
-    background-image: url(../images/lio.png);
+    /* background-image: url(../images/lio.png); */ /* 24-04-65 */
     background-repeat: no-repeat;   
     width: 30px;
     height: 30px;
@@ -2652,7 +2652,7 @@ table.table tbody tr td.sum span:after{
   }
   .search-top .form-search input{
     width: 100% !important;
-    max-width: 80% !important;
+    max-width: 70% !important;
   }
   .search-top button{
     margin-right: 5px !important;
@@ -2803,7 +2803,12 @@ table.table tbody tr td.sum span:after{
   .hide-tx.active:before{ 
     transform: rotate(90deg);
   }
-  
+  footer .col-lg-7 .row .col-4:nth-child(1) .ft-ul{
+    padding-left: 10px;
+  }
+  footer .col-lg-7 .row .col-4:nth-child(3) .ft-ul{
+    padding-right: 5px;
+  }
 
   /* END 24-04-65 */
 }
@@ -2822,7 +2827,12 @@ table.table tbody tr td.sum span:after{
     padding-right: 5px !important;
   }
 }
-
+@media only screen and (max-width: 374px) { /* m-mobile */
+  .search-top .form-search input{
+    width: 100% !important;
+    max-width: 53% !important;
+  }
+}
 /* END 24-04-65 */
 @media only screen and (min-width: 992px) { /* PC */
   .imap-po img{
@@ -3026,11 +3036,7 @@ table.table tbody tr td.sum span:after{
     width: 80px; 
   }
 }
-
-#form2{ /* 24-04-65 */
-  display: none;
-}
-
+ 
 
 
 
