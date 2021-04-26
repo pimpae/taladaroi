@@ -2652,7 +2652,7 @@ table.table tbody tr td.sum span:after{
   }
   .search-top .form-search input{
     width: 100% !important;
-    max-width: 70% !important;
+    max-width: 75% !important;
   }
   .search-top button{
     margin-right: 5px !important;
@@ -2827,7 +2827,14 @@ table.table tbody tr td.sum span:after{
     padding-right: 5px !important;
   }
 }
+
 @media only screen and (max-width: 374px) { /* m-mobile */
+  .search-top .form-search input{
+    width: 100% !important;
+    max-width: 60% !important;
+  }
+}
+@media only screen and (max-width: 320px) { /* m-mobile */
   .search-top .form-search input{
     width: 100% !important;
     max-width: 53% !important;
