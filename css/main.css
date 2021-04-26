@@ -2810,7 +2810,9 @@ table.table tbody tr td.sum span:after{
   footer .col-lg-7 .row .col-4:nth-child(3) .ft-ul{
     padding-right: 5px;
   }
-
+  .navbar-toggler img{
+    height: 20px;
+  }
   /* END 24-04-65 */
 }
 
