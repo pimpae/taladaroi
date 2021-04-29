@@ -629,7 +629,7 @@ ul.map-pan li.active:after{
 }
 
 .group-x{
-  width: 140px;
+  width: 145px; /* 29-04-65 */
 
 }
 .group-x .input-group {
@@ -1738,7 +1738,9 @@ div.badgex{
   vertical-align: middle !important;
 }
 
-table.table tbody tr td.price:after{
+
+/* 29-04-65 */
+/* table.table tbody tr td.price:after{
   content: ".-";
 }
 table.table tbody tr td.sum span:after{
@@ -1754,7 +1756,7 @@ table.table tbody tr td.sum span:after{
 
 .conclude .total-sum:after{
   content: ".-";
-}
+} */
 
 .order-list table tbody{ 
   border-bottom: 2px solid #669c36;
@@ -2438,7 +2440,7 @@ table.table tbody tr td.sum span:after{
     display: block;
     font-size: 12px;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 2px;
   }
   .user-lix img{
     position: absolute;
@@ -2576,8 +2578,11 @@ table.table tbody tr td.sum span:after{
     display: none;
   }
   .tabs-checkout .nav-tabs .nav-item{
-    font-size: 10px;
+    font-size: 9px; /* 29-04-65 */
     white-space: nowrap;
+  }
+  .tabs-checkout .nav-tabs .nav-item .nav-link{  /* 29-04-65 */
+    padding: 12px 0px;  
   }
   .payment .box-pay img{ 
     height: 20px; /* 24-04-65 */
@@ -2799,6 +2804,75 @@ table.table tbody tr td.sum span:after{
     display: none;
   }  
   /* END 24-04-65 */
+
+
+  /* 29-04-65 */
+  .table th, .table td {
+    padding: 0.75rem 0.25rem;
+    font-size: 11px; 
+    white-space: nowrap;
+  }
+  .order-list table tbody tr td:nth-child(1) {
+    font-size: 14px;
+    white-space: nowrap;    
+  } 
+  .order-list table tbody tr td:nth-child(2) img {
+    width: 60px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  .order-list table tbody h5 { 
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    margin-left: 5px;
+    margin-top: -30px;
+  }
+  .order-list table thead th:nth-child(3) { 
+    display: none;
+  }
+  .order-list table tbody td:nth-child(3) { 
+    display: none;
+  } 
+  .order-list table tbody tr td:nth-child(4){ 
+    font-size: 14px;
+  }
+  .order-list .del-x{
+    display: none;
+  } 
+  .group-x {
+    width: 90px !important;
+    margin-top: 20px;
+  }
+  .group-x .input-group { 
+    padding: 2px 8px 0px; 
+    height: 38px;
+  }
+  .group-x .input-group input[type='button'] { 
+    min-width: 25px; 
+  }
+  .group-x .input-group .button-minus, .group-x .input-group .button-plus { 
+    height: 25px; 
+    line-height: 0px !important;
+  }
+  .group-x .input-group .quantity-field { 
+    line-height: 0px !important;
+    padding-top: 0px !important;
+    background-color: transparent !important;
+    font-size: 16px;
+    width: 11px;
+  }
+  .order-list table tbody tr td:nth-child(6) {
+    font-size: 16px;
+  }
+  .orderxb h4{
+    font-size: 14px;
+    white-space: nowrap; 
+  }
+  .orderxb h4.th-x{
+    font-size: 18px;
+    white-space: nowrap; 
+  }
 }
 
 /* START 24-04-65 */
@@ -3029,6 +3103,9 @@ table.table tbody tr td.sum span:after{
   }
   .payment .box-pay img{ 
     width: 80px; 
+  }
+  .order-list table tbody tr td:nth-child(1) h5{
+    display: none;
   }
 }
  
