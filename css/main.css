@@ -1869,12 +1869,12 @@ table.table tbody tr td.sum span:after{
   background-repeat: no-repeat;  
   background-position: right; 
   
-  width: 15%; 
+  width: 20%; /* 29-04-65 */
   height: 50px;
   position: absolute;  
   margin: auto;
   display: block;
-  margin-top: -100px;
+  margin-top: -90px; /* 29-04-65 */
 }
 
 .tabs-checkout .nav-tabs .nav-item:nth-child(1) .nav-link:after{  
