@@ -859,6 +859,7 @@ h4.h4po{
 }
 .main-login input.form-control::placeholder {
   color: #8fa3b8;
+  line-height: 40px; /* 01-05-65 */
 }
 .main-login .form-group span{
   position: absolute; 
@@ -1221,7 +1222,10 @@ h3.ckp i{
   right: 0;
   top: 0;
   margin-top: -2px;
-  margin-right: 5px;
+  margin-right: 10px; /* 01-05-65 */
+}
+.cop .justify-content-end p{ /* 01-05-65 */
+  margin-right: 25px !important; 
 }
 .cop select::-ms-expand {  display: none; }
 .cop select{
@@ -1266,7 +1270,7 @@ h3.ckp i{
 .botx img.sh{ 
   height: 30px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 40px; /* 01-05-65 */
 }
 .botx img.ee{
   height: 15px;
@@ -2305,8 +2309,9 @@ table.table tbody tr td.sum span:after{
 
 
   .contact p{ 
-    font-size: 16px;
-    padding-left: 45px;
+    font-size: 13px; /* 01-05-65 */
+    padding-left: 45px; 
+    line-height: 22px; /* 01-05-65 */
   }
   .contact h2{
     padding-left: 40px;
@@ -2846,13 +2851,13 @@ table.table tbody tr td.sum span:after{
   }
   .group-x .input-group { 
     padding: 2px 8px 0px; 
-    height: 38px;
+    height: 30px;
   }
   .group-x .input-group input[type='button'] { 
-    min-width: 25px; 
+    min-width: 20px; 
   }
   .group-x .input-group .button-minus, .group-x .input-group .button-plus { 
-    height: 25px; 
+    height: 20px; 
     line-height: 0px !important;
   }
   .group-x .input-group .quantity-field { 
@@ -2860,7 +2865,10 @@ table.table tbody tr td.sum span:after{
     padding-top: 0px !important;
     background-color: transparent !important;
     font-size: 16px;
-    width: 11px;
+    margin-top: -10px;
+    width: 22px; 
+    text-align: center;
+    padding-top: 0px;
   }
   .order-list table tbody tr td:nth-child(6) {
     font-size: 16px;
@@ -2872,6 +2880,168 @@ table.table tbody tr td.sum span:after{
   .orderxb h4.th-x{
     font-size: 18px;
     white-space: nowrap; 
+  }
+
+  /* 01-05-65 */
+  .main-login input.form-control {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .main-login textarea.form-control { 
+    padding-left: 25px;
+    padding-top: 15px;
+  } 
+  .member1 .l2 input.form-control::placeholder { 
+    line-height: 40px; 
+  }
+  .member1 .l2 h3 {
+    font-size: 18px;
+  }
+  .member1 .l2 .address p { 
+    font-size: 14px;
+  }
+  .member1 .l2 .address p span{ 
+    font-size: 14px;
+  }
+  .l2 h2 {
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .cop p{   
+    font-size: 18px; 
+    margin-top: 0px; 
+  }
+  .main .cop .col-2.p-0{
+    margin-top: -5px;
+  } 
+  .main .item .itm  { /* 01-05-65 */
+    margin-bottom: 20px !important; 
+  } 
+  .order-list h3 {
+    font-size: 18px;
+  }
+  .see-more3{
+    display: none;
+  }
+  .see-rx{
+    text-align: center;
+  }
+  .member1 .l2 input.form-control {
+    font-size: 14px;
+  } 
+  .select-sx select {
+    font-size: 14px;
+  }
+  .adds-box.new{
+    border: 0px;
+    background-color: transparent;
+    height: 20px;
+  }
+  .adds-box.new i { 
+    margin-top: 0;
+  }
+  .order-list table tbody tr td:nth-child(5) {
+    font-size: 16px;
+  }
+  .btn-next { 
+    font-size: 14px;
+  }
+  .address-set h3{
+    font-size: 18px;
+  } 
+  .checkmarkx {
+    font-size: 14px;
+  }
+  .h4a {
+    font-size: 20px;
+  }
+  .adds-box h4 {
+    font-size: 17px;
+  }
+  .submx2 { 
+    font-size: 14px;
+  }
+  .otp-b { 
+    margin-top: -39px;
+    font-size: 13px;
+  }
+  .gb h3{
+    font-size: 22px;
+  } 
+  .select-sx select option::-webkit-input-placeholder { /* Edge */
+    padding-left: 15px;
+  }
+  
+  .select-sx select option:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    padding-left: 15px;
+  }
+  
+  .select-sx select option::placeholder {
+    padding-left: 15px;
+  } 
+  .review-main h6 span {
+    font-size: 12px;
+  }
+  .btn-pdfx {
+    font-size: 8px;
+  }
+  .see-more.float-right {
+    margin-left: 30%;
+    margin-right: 30%;
+    float: unset !important;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+  ul.map-pan li { 
+    line-height: 34px;
+  }
+  .member1 .l2 h5 {
+    font-size: 16px;
+  }
+  h3.ckp {
+    font-size: 18px;
+  }
+  .form-control::-webkit-input-placeholder { 
+    padding-left: 5px;
+  }
+  
+  .form-control:-ms-input-placeholder { 
+    padding-left: 5px;
+  }
+  
+  .form-control::placeholder {
+    padding-left: 5px;
+  } 
+  .review-main h3 {
+    font-size: 20px;
+  }
+  .alertx2:after {
+    content: "";
+    width: 10px;
+    height: 10px; 
+    margin-left: 5px;
+  }
+  .review-main h6 { 
+    margin-top: 10px;
+  }
+  .review-main .fl { 
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .review-box .r:after {
+    margin-top: 36px;
+  }
+  .review-box .r:after { 
+    margin-left: -16px;
+  }
+  .p-r{
+    padding: 0px 10px 0px 0px;
+  }
+  .main-de > .col-12.p-0{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -3107,7 +3277,9 @@ table.table tbody tr td.sum span:after{
   .order-list table tbody tr td:nth-child(1) h5{
     display: none;
   }
-}
+  .main .item .itm  { /* 01-05-65 */
+    margin-bottom:30px; 
+  } 
  
 
 
