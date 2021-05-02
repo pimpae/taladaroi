@@ -3043,6 +3043,27 @@ table.table tbody tr td.sum span:after{
     align-items: center;
     justify-content: center;
   }
+  .stat-x i { 
+    font-size: 12px;
+  }
+  .btn-dw {  
+    margin-right: 0;
+    font-size: 12px;
+  }
+  .review-main h3 {
+    font-size: 18px;
+  }
+  .review-main > .col{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .btn-pdf {
+    position: absolute;
+    float: right; 
+    font-size: 12px;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
 }
 
 /* START 24-04-65 */
