@@ -14,6 +14,8 @@
         <title> Taladaroi </title>
         
         <link href="css/lightslider.css" rel="stylesheet" type="text/css" />
+
+        <link href="css/bootstrap-datepicker.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -232,7 +234,7 @@
             <div class="clearfix">&nbsp;</div>
             <div class="clearfix">&nbsp;</div>
             <div class="clearfix">&nbsp;</div>
-            <div class="clearfix">&nbsp;</div>
+            <div class="clearfix">&nbsp;</div> 
 
             <section>
                 <div class="container">
@@ -270,21 +272,23 @@
                                             <form>
                                                 <div class="form-group select-sx row"> 
                                                     <div class="col-lg-6 col-12">
-                                                        <select class="form-control" id="sel1">
-                                                            <option>กรุณาเลือก</option>
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                        </select>
+                                                        <input type="text" class="form-control  date bg2" name="date" id="date" placeholder="กรุณาเลือกวันที่ในการรับสินค้า" >
                                                         <span>*</span>
                                                     </div>
                                                     <div class="clearfix pc-x" style="margin-top: -10px;">&nbsp;</div>
                                                     <div class="col-lg-6 col-12">
                                                         <select class="form-control" id="sel1">
-                                                            <option>วัน/เวลาในการรับสินค้า</option>
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
+                                                            <option>กรุณาเลือกเวลาในการรับสินค้า</option>
+                                                            <option>09.00-10.00</option>
+                                                            <option>10.00-11.00</option>
+                                                            <option>11.00-12.00</option>
+                                                            <option>12.00-13.00</option>
+                                                            <option>13.00-14.00</option>
+                                                            <option>14.00-15.00</option>
+                                                            <option>15.00-16.00</option>
+                                                            <option>16.00-17.00</option>
+                                                            <option>17.00-18.00</option>
+                                                            
                                                         </select>
                                                         <span>*</span>
                                                     </div>
@@ -660,7 +664,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
         <script src="js/lightslider.js"></script>
-
+        
+        
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/bootstrap-datepicker.th.min.js"></script>
+        
+        
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v7.0" nonce="SlEBHGjO"></script> 
 
@@ -757,6 +766,14 @@
             $(".hide-tx").click(function() {
                 $(this).toggleClass("active");  
             });
+
+            $('.date').datepicker({
+                format: "dd/mm/yyyy",
+                todayBtn: "linked",
+                language: "en",
+                autoclose: true,
+                todayHighlight: true
+            }); 
         </script>
 
     </body>

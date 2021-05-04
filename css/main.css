@@ -2864,9 +2864,9 @@ table.table tbody tr td.sum span:after{
     line-height: 0px !important;
     padding-top: 0px !important;
     background-color: transparent !important;
-    font-size: 16px;
+    font-size: 13px; /* 04-05-65 */
     margin-top: -10px;
-    width: 22px; 
+    width: 25px;  /* 04-05-65 */
     text-align: center;
     padding-top: 0px;
   }
@@ -2969,15 +2969,15 @@ table.table tbody tr td.sum span:after{
     font-size: 22px;
   } 
   .select-sx select option::-webkit-input-placeholder { /* Edge */
-    padding-left: 15px;
+    padding-left: 15px !important;
   }
   
   .select-sx select option:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    padding-left: 15px;
+    padding-left: 15px !important;
   }
   
   .select-sx select option::placeholder {
-    padding-left: 15px;
+    padding-left: 15px !important;
   } 
   .review-main h6 span {
     font-size: 12px;
@@ -3003,15 +3003,15 @@ table.table tbody tr td.sum span:after{
     font-size: 18px;
   }
   .form-control::-webkit-input-placeholder { 
-    padding-left: 5px;
+    padding-left: 5px !important;
   }
   
   .form-control:-ms-input-placeholder { 
-    padding-left: 5px;
+    padding-left: 5px !important;
   }
   
   .form-control::placeholder {
-    padding-left: 5px;
+    padding-left: 5px !important;
   } 
   .review-main h3 {
     font-size: 20px;
@@ -3047,7 +3047,7 @@ table.table tbody tr td.sum span:after{
     font-size: 12px;
   }
   .btn-dw {  
-    margin-right: 0;
+    /* margin-right: 0; */ /* 04-05-65 */
     font-size: 12px;
   }
   .review-main h3 {
@@ -3064,6 +3064,19 @@ table.table tbody tr td.sum span:after{
     bottom: 0;
     margin-bottom: 10px;
   }
+
+  /* 04-05-65 */
+  .main-login .form-group span.address {
+    margin-top: -130px;
+  }
+  .ssc img { 
+    margin-right: 5px;
+    margin-left: 5px;
+  }  
+  .form-control.date::placeholder {
+    color: #d2232a !important; 
+  } 
+  
 }
 
 /* START 24-04-65 */
@@ -3095,6 +3108,9 @@ table.table tbody tr td.sum span:after{
 }
 /* END 24-04-65 */
 @media only screen and (min-width: 992px) { /* PC */
+  .main-login .form-group span.address {
+    margin-top: -130px;
+  }
   .imap-po img{
     max-width: 100px;
   }
@@ -3301,7 +3317,11 @@ table.table tbody tr td.sum span:after{
   .main .item .itm  { /* 01-05-65 */
     margin-bottom:30px; 
   } 
- 
+  .form-control.date::placeholder {
+    color: #d2232a !important;
+    line-height: 40px;
+  } 
+}
 
 
 
