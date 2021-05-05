@@ -2824,14 +2824,14 @@ table.table tbody tr td.sum span:after{
   .order-list table tbody tr td:nth-child(2) img {
     width: 60px;
     border-radius: 10px;
-    margin-top: 30px;
+    /* margin-top: 30px; 04-05-65 */
   }
   .order-list table tbody h5 { 
     font-size: 16px;
     position: absolute;
     left: 0;
     margin-left: 5px;
-    margin-top: -30px;
+    margin-top: -40px;
   }
   .order-list table thead th:nth-child(3) { 
     display: none;
@@ -2847,7 +2847,7 @@ table.table tbody tr td.sum span:after{
   } 
   .group-x {
     width: 90px !important;
-    margin-top: 20px;
+    /* margin-top: 20px;  04-05-65 */
   }
   .group-x .input-group { 
     padding: 2px 8px 0px; 
@@ -3038,6 +3038,9 @@ table.table tbody tr td.sum span:after{
   .p-r{
     padding: 0px 10px 0px 0px;
   }
+  .p-l{
+    padding: 0px 0px 0px 10px;
+  }
   .main-de > .col-12.p-0{
     display: flex;
     align-items: center;
@@ -3076,7 +3079,20 @@ table.table tbody tr td.sum span:after{
   .form-control.date::placeholder {
     color: #d2232a !important; 
   } 
-  
+  .review-box .r {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .stat-x{
+    margin-top: 45px;
+    margin-bottom: -30px;
+  }
+  .order-list table tbody tr td { 
+    padding-top: 40px;
+  }
 }
 
 /* START 24-04-65 */
