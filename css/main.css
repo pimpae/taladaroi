@@ -2344,7 +2344,7 @@ table.table tbody tr td.sum span:after{
     margin-bottom: 30px; 
   }
   .main-login h3{ 
-    font-size: 22px;
+    font-size: 19px;
   }
   .main-login h3 a{   
     font-size: 18px; 
@@ -3148,6 +3148,9 @@ table.table tbody tr td.sum span:after{
     margin-left: 10px;
     display: block;
     width: 100%;;
+  }
+  .l32{
+    margin-left: -32px
   }
 }
 
