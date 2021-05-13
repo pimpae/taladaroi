@@ -226,7 +226,7 @@ main{
   background: url(../images/Background-Body.png);
   background-repeat: no-repeat;  
   background-size: 100% auto;
-  background-position: top;
+  background-position: center center;
 }
 footer{
   background: url(../images/Background-Footer.png);
@@ -1026,8 +1026,10 @@ h3.ckp i{
   border: none;
   border-radius: 16px;
   height: 50px;
-  padding-left: 25px; 
+  padding-left: 25px;  
+  line-height: 51px !important;
 }
+
 .member1 .l2 .bg2{  
   background-color: #f2f3f2;
 }
@@ -1511,8 +1513,7 @@ h3.t3{
 
 .review-main .fl{
   color: #004F2B;
-  font-family: Mali-Bold;
-  margin-top: -25px;
+  font-family: Mali-Bold; 
 }
 .textbb{
   background-color: #ffff;
@@ -1639,11 +1640,11 @@ div.badgex{
 }
 .alertx2:after{
   content: "";
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: #d2232a;
   position: absolute;
-  margin-top: 7px;
+  margin-top: 6px;
   border-radius: 100%;
   margin-left: 10px;
 }
@@ -2888,8 +2889,8 @@ table.table tbody tr td.sum span:after{
   .order-list table tbody tr td:nth-child(4){ 
     font-size: 14px;
   }
-  .order-list .del-x{
-    display: none;
+  .order-list .del-x{ 
+    font-size: 13px;
   } 
   .group-x {
     width: 90px !important;
@@ -3185,10 +3186,13 @@ table.table tbody tr td.sum span:after{
   .review-main .fl {
     margin-top: 15px;
     font-size: 14px; 
-    margin-top: 2px;
+    margin-top: 15px;
+  }
+  .olp{
+    margin-top: 3px !important;
   }
   .review-main .stat-x {  
-    margin-left: 10px;
+    /* margin-left: 10px; */
     display: block;
     width: 100%;;
   }
@@ -3289,6 +3293,20 @@ table.table tbody tr td.sum span:after{
   .btx-search:hover{
     background-color: #4a752e;
   }
+  .cop select {
+    line-height: 30px;
+    font-size: 11px;
+    height: 35px;
+  }
+  .justify-l{
+    justify-content: center !important;
+  }
+  .justify-r{
+    justify-content: center !important;
+  }
+  .subm2 { 
+    font-size: 14px;
+  }
 }
 
 /* START 24-04-65 */
@@ -3320,6 +3338,28 @@ table.table tbody tr td.sum span:after{
 }
 /* END 24-04-65 */
 @media only screen and (min-width: 992px) { /* PC */
+  .justify-l{
+    justify-content: start !important;
+  }
+  .justify-r{
+    justify-content: flex-end  !important;
+  }
+  .cop select { 
+    height: 40px !important; 
+    line-height: 35px !important;
+  }
+  .cop p { 
+    margin-top: 5px !important; 
+
+  }
+  .order-list .del-x{
+    font-size: 18px;
+  }
+  
+
+
+
+
   .main-login .form-group span.address {
     margin-top: -130px;
   }
@@ -3777,10 +3817,26 @@ table.table tbody tr td.sum span:after{
   .btx-search:hover{
     background-color: #4a752e;
   }
+
+  .member1 .l2 input.form-control.bg2::placeholder { 
+    line-height: 55px !important;  
+    padding-left: 5px !important;
+  } 
+  .order-list h3 { 
+    line-height: 50px;
+    margin-bottom: -10px;
+  }
+  .select-sx select {
+    line-height: 100% !important; 
+  }
+  .review-main .fl{ 
+    margin-top: 15px;
+  }
+  .olp{
+    margin-top: 0px !important;
+  }
 }
-
-
-
+ 
 
 
 /* 
