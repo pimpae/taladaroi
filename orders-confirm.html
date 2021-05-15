@@ -14,6 +14,9 @@
         <title> Taladaroi </title>
         
         <link href="css/lightslider.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+
+
     </head>
     <body>
         <header>
@@ -291,22 +294,21 @@
                                     <form action="">
                                         <div class="row">
                                             <div class="col-lg-6 col-12 none-xs">
-                                                <div class="form-group select-sx"> 
-                                                    <select class="form-control" id="sel1">
-                                                        <option>ธนาคารที่ใช้โอนเงิน</option>
+                                                <div class="form-group select-sx">  
+                                                    <select class="selectpicker" id="sel1" title="ธนาคาร ที่ ใช้โอนเงิน"> 
                                                         <option>ธนาคาร 1</option>
                                                         <option>ธนาคาร 2</option>
                                                         <option>ธนาคาร 3</option>
                                                     </select>
-                                                    <span>*</span>
+                                                    <span class="mm">*</span>
                                                 </div> 
                                                 <div class="form-group"> 
                                                     <input type="text" class="form-control bg2" placeholder="เลขที่บัญชี 4 หลักสุดท้ายที่ใช้โอนเงิน">
-                                                    <span>*</span>
+                                                    <span class="m">*</span>
                                                 </div> 
                                                 <div class="form-group"> 
                                                     <input type="text" class="form-control bg2" placeholder="จำนวนเงิน">
-                                                    <span>*</span>
+                                                    <span class="m">*</span>
                                                 </div>  
                                             </div>
                                             <div class="col-lg-6 col-12 fa-uploadx">
@@ -513,7 +515,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v7.0" nonce="SlEBHGjO"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 
+        
         <script type="text/javascript">
             $(document).ready(function() {        
                 var width = $(window).width();

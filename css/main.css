@@ -30,10 +30,10 @@
   margin-left: -15px;
 } 
 
-.dropdown:hover>.dropdown-menu {
+/* .dropdown:hover>.dropdown-menu {
   display: block;
 }
- 
+  */
 .navbar-toggler-left .fa-bars{
   color: #fff !important;
 }
@@ -862,7 +862,7 @@ h4.h4po{
   color: #8fa3b8;
   line-height: 40px; /* 01-05-65 */
 }
-.main-login .form-group span{
+.main-login .form-group span.m{
   position: absolute; 
   margin-top: -40px;
   font-family: Mali-Bold;
@@ -1060,7 +1060,7 @@ h3.ckp i{
   color: #8fa3b8;
   font-size: 14px;
 }
-.member1 .l2 .form-group span{
+.member1 .l2 .form-group span.m{
   position: absolute; 
   margin-top: -40px;
   font-family: Mali-Bold;
@@ -1687,12 +1687,26 @@ div.badgex{
   border: none;
   border-radius: 16px;  
   color: #d2232a;
-  height: 150px;
+  height: 50px;
   padding-left: 25px;
   background-color: #f2f3f2;
   line-height: 50px !important;
-  padding-top: 0px !important;
+  padding-top: 10px !important;
 } 
+
+.select-sx option{
+  padding: 28px !important;
+}
+
+/* .bank0x{
+  position: absolute;
+  color: #d2232a !important;
+  padding-left: 30px;
+  padding-top: 15px !important;
+  line-height: -30px;
+} */
+
+
 .select-sx select {   
   color: #d2232a; 
 } 
@@ -1704,7 +1718,7 @@ div.badgex{
 .select-sx select option::placeholder {
   color: #d2232a !important; 
 }
-.select-sx span{
+.select-sx span.m{
   position: absolute; 
   margin-top: -40px;
   font-family: Mali-Bold;
@@ -2161,6 +2175,42 @@ table.table tbody tr td.sum span:after{
 .form-control{
   font-family: Mali-Bold;
 } 
+.dropdown.bootstrap-select{
+  width: 100% !important;
+  font-family: Mali-Bold;
+}
+.dropdown.bootstrap-select .dropdown-toggle{
+  height: 50px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #d2232a;
+  line-height: 40px;
+  padding-left: 30px;
+}
+
+.dropdown.bootstrap-select .dropdown-toggle{
+  height: 50px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: #d2232a;
+  line-height: 40px;
+  padding-left: 30px;
+}  
+.filter-option-inner-inner{
+  
+  color: #d2232a;
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+  outline: thin dotted transparent !important;
+  outline: 5px auto -webkit-focus-ring-color!important;
+ 
+} 
+.dropdown.bootstrap-select .dropdown-menu li a { 
+  font-family: Mali-Bold;
+  font-size: 14px; 
+  line-height: 40px;
+}
 
 @media only screen and (max-width: 991px) { /* MOBILE */
   footer h4{
@@ -3336,6 +3386,16 @@ table.table tbody tr td.sum span:after{
   .see-more3{ 
     font-size: 12px;
   }
+  .bootstrap-select + span.mm{
+    position: absolute; 
+    margin-top: 10px;
+    margin-left: 11px;
+    left: 0;
+    font-family: Mali-Bold;
+    color: red;
+    font-size: 24px; 
+    z-index: 10;
+  }
 }
 
 /* START 24-04-65 */
@@ -3873,6 +3933,7 @@ table.table tbody tr td.sum span:after{
   .member1 .l2 input.form-control.bg2::placeholder { 
     line-height: 55px !important;  
     padding-left: 5px !important;
+    font-size: 14px;
   } 
   .order-list h3 { 
     line-height: 50px;
@@ -3880,12 +3941,23 @@ table.table tbody tr td.sum span:after{
   }
   .select-sx select {
     line-height: 100% !important; 
+    font-size: 14px;
   }
   .review-main .fl{ 
     margin-top: 15px;
   }
   .olp{
     margin-top: 0px !important;
+  }
+  .bootstrap-select + span.mm{
+    position: absolute; 
+    margin-top: 10px;
+    margin-left: 26px;
+    left: 0;
+    font-family: Mali-Bold;
+    color: red;
+    font-size: 24px; 
+    z-index: 10;
   }
 }
  
