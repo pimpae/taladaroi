@@ -1242,7 +1242,7 @@ h3.ckp i{
   color: #401c0d; 
 }
 .cop .form-group{
-  margin-bottom: -25px;
+  margin-bottom: -25px; 
 }
 .abpr .col-2{
   position: absolute;
@@ -3363,9 +3363,11 @@ table.table tbody tr td.sum span:after{
   }
   .justify-l{
     justify-content: center !important;
+    text-align: center;
   }
   .justify-r{
     justify-content: center !important;
+    text-align: center;
   }
   .subm2 { 
     font-size: 14px;
@@ -3395,6 +3397,41 @@ table.table tbody tr td.sum span:after{
     color: red;
     font-size: 24px; 
     z-index: 10;
+  }
+  .address-set .bootstrap-select + span.mm{
+    margin-left: 26px;
+  }
+  .sel-imgx:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/r-c.png);
+    background-size: 20px 20px;  
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); 
+    top: 0; 
+    right: 0;
+    margin-top: 5px;
+    margin-right: 25px;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 100%; ;
+  }
+
+  .sel-imgx2:after {
+    content: '';
+    width: 8px; 
+    height: 9px;
+    background-image: url(../images/v.png);
+    background-size: 8px 9px;   
+    top: 0; 
+    right: 0;
+    margin-top: 7px;
+    margin-right: 10px;
+    position: absolute;
+    pointer-events: none; 
   }
 }
 
@@ -3898,6 +3935,20 @@ table.table tbody tr td.sum span:after{
     border-radius: 100%; ;
   }
 
+  .sel-imgx2:after {
+    content: '';
+    width: 11px; 
+    height: 12px;
+    background-image: url(../images/v.png);
+    background-size: 11px 12px;   
+    top: 0; 
+    right: 0;
+    margin-top: 16px;
+    margin-right: 15px;
+    position: absolute;
+    pointer-events: none; 
+  }
+
 
   .search-box .form-control{
     display: block;
@@ -3958,6 +4009,16 @@ table.table tbody tr td.sum span:after{
     color: red;
     font-size: 24px; 
     z-index: 10;
+  }
+  .group-x{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .input-group{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
  
