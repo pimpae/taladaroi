@@ -309,6 +309,7 @@ footer{
   font-family: Mali-Bold;
   padding: 11px 25px;
   border-radius: 14px;
+  font-size: 15px;
 }
 .see-more:hover{
   color: #fff;
@@ -320,7 +321,7 @@ footer{
   font-family: Mali-Bold;
   padding: 8px 15px;
   border-radius: 14px;
-  font-size: 12px;
+  font-size: 15px;
 }
 .see-more2:hover{
   color: #fff;
@@ -332,7 +333,7 @@ footer{
   font-family: Mali-Bold;
   padding: 8px 15px;
   border-radius: 14px;
-  font-size: 12px;
+  font-size: 15px;
 }
 .see-more3:hover{
   color: #fff;
@@ -1686,9 +1687,11 @@ div.badgex{
   border: none;
   border-radius: 16px;  
   color: #d2232a;
-  height: 50px;
+  height: 150px;
   padding-left: 25px;
   background-color: #f2f3f2;
+  line-height: 50px !important;
+  padding-top: 0px !important;
 } 
 .select-sx select {   
   color: #d2232a; 
@@ -1793,6 +1796,9 @@ table.table tbody tr td.sum span:after{
 }
 .order-list table tbody tr td:nth-child(6){ 
   font-size: 20px;
+}
+.order-list table tbody tr td:nth-child(6) span:after{ 
+  content: ".00";
 }
 
 .order-list table tbody h5{ 
@@ -2865,20 +2871,28 @@ table.table tbody tr td.sum span:after{
     white-space: nowrap;
   }
   .order-list table tbody tr td:nth-child(1) {
-    font-size: 14px;
-    white-space: nowrap;    
+    font-size: 13px;   
+    white-space: normal;
   } 
   .order-list table tbody tr td:nth-child(2) img {
-    width: 60px;
+    width: 50px;
     border-radius: 10px;
     /* margin-top: 30px; 04-05-65 */
   }
+  .order-list table thead th:nth-child(1) { 
+    width: 100px;
+  }
+  .order-list table tbody td:nth-child(1) { 
+    width: 100px;
+  }
   .order-list table tbody h5 { 
-    font-size: 16px;
     position: absolute;
+    font-size: 13px; 
     left: 0;
     margin-left: 5px;
-    margin-top: -40px;
+    margin-top: -50px;
+    position: absolute;
+    text-align: left;
   }
   .order-list table thead th:nth-child(3) { 
     display: none;
@@ -2887,24 +2901,25 @@ table.table tbody tr td.sum span:after{
     display: none;
   } 
   .order-list table tbody tr td:nth-child(4){ 
-    font-size: 14px;
+    font-size: 13px;
   }
   .order-list .del-x{ 
     font-size: 13px;
   } 
   .group-x {
-    width: 90px !important;
+    width: 80px !important;
+    margin-left: -5px;
     /* margin-top: 20px;  04-05-65 */
   }
   .group-x .input-group { 
-    padding: 2px 8px 0px; 
+    padding: 2px 0px 0px; 
     height: 30px;
   }
   .group-x .input-group input[type='button'] { 
-    min-width: 20px; 
+    min-width: 18px; 
   }
   .group-x .input-group .button-minus, .group-x .input-group .button-plus { 
-    height: 20px; 
+    height: 18px; 
     line-height: 0px !important;
   }
   .group-x .input-group .quantity-field {  /* 01-05-65 */
@@ -2918,7 +2933,7 @@ table.table tbody tr td.sum span:after{
     padding-top: 0px;
   }
   .order-list table tbody tr td:nth-child(6) {
-    font-size: 16px;
+    font-size: 14px;
   }
   .orderxb h4{
     font-size: 14px;
@@ -2967,10 +2982,7 @@ table.table tbody tr td.sum span:after{
   .order-list h3 {
     font-size: 18px;
     line-height: 36px;
-  }
-  .see-more3{
-    display: none;
-  }
+  } 
   .see-rx{
     text-align: center;
   }
@@ -3151,9 +3163,9 @@ table.table tbody tr td.sum span:after{
   .nav-tabs .nav-item {
     margin-bottom: 0px !important;
   }
-  .address-set h3{
+  /* .address-set h3{
     text-align: center;
-  }
+  } */
   .adds-box p {
     font-size: 12px;
   }
@@ -3254,7 +3266,7 @@ table.table tbody tr td.sum span:after{
   .sel-img{
     -webkit-appearance: none;
   }
-  .sel-img + p > img{
+  .sel-img + label > img{
     width: 20px;
     transform: rotate(90deg);
     float: right;
@@ -3297,6 +3309,7 @@ table.table tbody tr td.sum span:after{
     line-height: 30px;
     font-size: 11px;
     height: 35px;
+    text-align-last: center;
   }
   .justify-l{
     justify-content: center !important;
@@ -3306,6 +3319,22 @@ table.table tbody tr td.sum span:after{
   }
   .subm2 { 
     font-size: 14px;
+  }
+
+  .see-more{ 
+    font-size: 12px;
+    padding: 8px 15px;
+  } 
+  .see-more2{
+    color: #fff; 
+    font-size: 12px;
+  }
+  .see-more2:hover{
+    color: #fff;
+    background-color: #87bf57; 
+  }
+  .see-more3{ 
+    font-size: 12px;
   }
 }
 
@@ -3355,7 +3384,9 @@ table.table tbody tr td.sum span:after{
   .order-list .del-x{
     font-size: 18px;
   }
-  
+  .table thead th:nth-child(3) {
+    width: 391px !important;
+  }
 
 
 
@@ -3779,7 +3810,7 @@ table.table tbody tr td.sum span:after{
   .sel-img{
     -webkit-appearance: none;
   }
-  .sel-img + p > img{
+  .sel-img + label > img{
     width: 30px;
     transform: rotate(90deg);
     float: right;
@@ -3787,6 +3818,27 @@ table.table tbody tr td.sum span:after{
     border-radius: 100%;
     margin-right: 15px;
   }
+ 
+  .sel-imgx:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/r-c.png);
+    background-size: 30px 30px;  
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); 
+    top: 0; 
+    right: 0;
+    margin-top: 10px;
+    margin-right: 25px;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 100%; ;
+  }
+
+
   .search-box .form-control{
     display: block;
     margin: auto;
